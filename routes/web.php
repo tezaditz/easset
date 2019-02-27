@@ -21,3 +21,5 @@ Route::get('/admin/qrcode/print/{id}', 'AdminBarang13Controller@label')->name('p
 Route::get('/admin/gen/nourut' , 'AdminBarang13Controller@gen_no_urut_aset')->name('gen-noaset');
 
 Route::get('/admin/encode/img/{img_path}/{img_type}' , 'AdminBarang13Controller@encode_img_base64');
+Route::get('/admin/barang_upload/reset_data' , 'AdminBarangUploadController@resetdata')->name('reset-data');
+Route::post('/admin/barang_upload/upload' , 'AdminBarangUploadController@import')->name('import-data');
