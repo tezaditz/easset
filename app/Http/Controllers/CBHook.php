@@ -14,6 +14,7 @@ class CBHook extends Controller {
 	|
 	*/
 	public function afterLogin() {
-		
+		return redirect('/admin/dashboard')->send();
+        exit;
 	}
 }
